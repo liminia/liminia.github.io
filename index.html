@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لیمینیا | توسعه‌دهنده و خالق ابزارهای وب</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #212529;
+            --card-bg: #ffffff;
+            --card-border: #e9ecef;
+            --accent-color: #0d6efd;
+            --accent-hover: #0b5ed7;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0d1117;
+                --text-color: #c9d1d9;
+                --card-bg: #161b22;
+                --card-border: #30363d;
+                --accent-color: #58a6ff;
+                --accent-hover: #79c0ff;
+            }
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.1rem; opacity: 0.8; max-width: 600px; }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 1000px;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: var(--accent-color);
+        }
+        .card h3 { color: var(--accent-color); margin-bottom: 0.75rem; font-size: 1.25rem; }
+        .card p { font-size: 0.95rem; opacity: 0.85; flex-grow: 1; margin-bottom: 1rem; }
+        .card .link { font-size: 0.9rem; font-weight: 600; color: var(--accent-color); }
+        
+        footer { margin-top: 4rem; font-size: 0.85rem; opacity: 0.6; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>سلام، من لیمینیا هستم 👋</h1>
+        <p class="subtitle">توسعه‌دهنده وب و سازنده ابزارهای سبک، سریع و کاربردی برای تجربه‌ای بهتر.</p>
+    </header>
+
+    <main class="projects-grid">
+        <!-- پروژه ۱ -->
+        <a href="https://liminia.github.io/Summary/" class="card" target="_blank">
+            <h3>📝 خلاصه‌ساز متن</h3>
+            <p>ابزاری هوشمند برای فشرده‌سازی و تولید خلاصه ساختاریافته از متن‌های طولانی به صورت آنی.</p>
+            <span class="link">مشاهده پروژه ←</span>
+        </a>
+
+        <!-- پروژه ۲ -->
+        <a href="https://liminia.github.io/icon/" class="card" target="_blank">
+            <h3>🎨 کتابخانه آیکون</h3>
+            <p>دسترسی سریع و دسته‌بندی‌شده به هزاران آیکون با قابلیت دانلود مستقیم فرمت‌های SVG و PNG.</p>
+            <span class="link">مشاهده پروژه ←</span>
+        </a>
+
+        <!-- پروژه ۳ -->
+        <a href="https://liminia.github.io/edit/" class="card" target="_blank">
+            <h3>🖼️ ویرایشگر تصویر</h3>
+            <p>یک ویرایشگر تصویر سبک و سریع که تمام پردازش‌ها را به‌طور کامل و امن روی دستگاه خود کاربر انجام می‌دهد.</p>
+            <span class="link">مشاهده پروژه ←</span>
+        </a>
+    </main>
+
+    <footer>
+        <p>ساخته شده با ❤️ و GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
