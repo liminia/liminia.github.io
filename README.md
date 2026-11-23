@@ -14,3 +14,16 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+<h1 style="color: #0366d6; text-align: center;">سلام، من علی هستم! 👋</h1>
+<p style="font-size: 18px;">این یک متن تستی با استفاده از <b>HTML</b> در گیتهاب است.</p>
+<hr>
+<table>
+  <tr>
+    <th>مهارت</th>
+    <th>سطح</th>
+  </tr>
+  <tr>
+    <td>HTML/CSS</td>
+    <td>⭐⭐⭐⭐⭐</td>
+  </tr>
+</table>
